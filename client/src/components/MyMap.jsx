@@ -21,7 +21,7 @@ function MyMap({lists}) {
       center={position}
       zoom={13}
       scrollWheelZoom={false}
-      style={{height: '635px', width: '58vw', marginLeft: '60px'}}
+      style={{height: '630px', width: '58vw', marginLeft: '60px'}}
     >
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -40,9 +40,10 @@ function MyMap({lists}) {
           <div className="card m-2 p-3" style={{width: '18rem'}}>
             <img src={list.photosUrl} class="card-img-top" alt="..." />
             <div className="card-body">
-              <h4 className="card-title">{list.title}</h4>
+              <h4 className="card-title ">{list.title}</h4>
               <div className='row'>
-                <h6 class="card-subtitle mb-2 text-muted col">{list.location}</h6>
+                <h6 class="card-subtitle mb-2 text-muted text-uppercase">{list.location}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">{list.date}</h6>
               </div>
             </div>
           </div>

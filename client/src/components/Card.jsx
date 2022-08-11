@@ -21,9 +21,9 @@ function Card({list, handleDelete}) {
           <div className="card col-6 m-3 p-3" style={{width: '30rem'}}>
             <img src={photosUrl} class="card-img-top" alt="..." />
             <div className="card-body">
-              <h4 className="card-title">{title}</h4>
+              <h4 className="card-title text-uppercase">{title}</h4>
               <div className='row'>
-                <h6 class="card-subtitle mb-2 text-muted col">{location}</h6>
+                <h6 class="card-subtitle mb-2 text-muted col text-uppercase">{location}</h6>
                 <h6 class="card-subtitle mb-2 text-muted col">{date}</h6>
               </div>
               {/* <p className="card-text">{body.length < 200 ? body : body.slice(0, 200)}</p> */}
