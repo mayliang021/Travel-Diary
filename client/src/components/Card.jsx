@@ -18,7 +18,7 @@ function Card({list, handleDelete}) {
     }
   }
   return (
-          <div className="card col-6 m-2 p-3" style={{width: '30rem'}}>
+          <div className="card col-6 m-3 p-3" style={{width: '30rem'}}>
             <img src={photosUrl} class="card-img-top" alt="..." />
             <div className="card-body">
               <h4 className="card-title">{title}</h4>
@@ -28,7 +28,7 @@ function Card({list, handleDelete}) {
               </div>
               {/* <p className="card-text">{body.length < 200 ? body : body.slice(0, 200)}</p> */}
               {renderBody(body)}
-              <button onClick={() => handleDelete(_id)} className='btn btn-outline-primary'>DELETE</button>
+              <button onClick={() => handleDelete(_id)} className='btn btn-outline-secondary myBtn2'>DELETE</button>
             </div>
           </div>
 

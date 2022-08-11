@@ -18,7 +18,7 @@ function PhotoUpload({setPhotosUrl}) {
 
   return (
     <>
-      <label htmlFor="formFileMultiple" className="form-label">Upload photos</label>
+      <label htmlFor="formFileMultiple" className="form-label fw-bolder">Upload photos</label>
       <input
         className="form-control"
         type="file"

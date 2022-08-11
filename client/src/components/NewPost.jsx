@@ -40,9 +40,9 @@ function NewPost({handleNewPost}) {
     <div className='card'>
       <div className='card-body'>
         <form onSubmit = {handleSubmit}>
-          <div>{date}</div>
+          {/* <div className='fw-semibold'>{date}</div> */}
           <div className="mb-3">
-            <label htmlFor="exampleFormControlInput1" className="form-label">Title</label>
+            <label htmlFor="exampleFormControlInput1" className="form-label fw-bolder">Title</label>
             <input
               type="text"
               className="form-control"
@@ -54,7 +54,7 @@ function NewPost({handleNewPost}) {
 
           </div>
           <div className="mb-3">
-            <label htmlFor="exampleFormControlInput1" className="form-label">Location</label>
+            <label htmlFor="exampleFormControlInput1" className="form-label fw-bolder">Location</label>
             <input
               type="text"
               className="form-control"
@@ -68,7 +68,7 @@ function NewPost({handleNewPost}) {
             <PhotoUpload setPhotosUrl={setPhotosUrl}/>
           </div>
           <div className="mb-3">
-            <label htmlFor="exampleFormControlTextarea1" className="form-label">How do you feel</label>
+            <label htmlFor="exampleFormControlTextarea1" className="form-label fw-bolder">How do you feel</label>
             <textarea
               className="form-control"
               id="exampleFormControlTextarea1"
@@ -79,7 +79,7 @@ function NewPost({handleNewPost}) {
 
              </textarea>
           </div>
-          <button className='btn btn-outline-primary'>SUBMIT</button>
+          <button className='btn btn-dark myBtn'>SUBMIT</button>
         </form>
     </div>
     </div>

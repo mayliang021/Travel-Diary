@@ -43,13 +43,14 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='myContainer'>
       <div className='row'>
         <Header/>
-
+        <h3>WRITE DOWN A NEW DIARY</h3>
         <div className='col-3'>
           <NewPost handleNewPost={handleNewPost}/>
         </div>
+
         <div className='col'>
           <MyMap lists={lists}/>
         </div>
