@@ -1,0 +1,23 @@
+.map-container{
+  height: 60vh;
+  width: 40vw;
+}
+
+body{
+  margin: 0; padding: 0;
+}
+
+#map{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+ }
+
+ .showMore {
+  border: none;
+  text-decoration: underline;
+  background-color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
